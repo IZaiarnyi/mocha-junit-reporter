@@ -201,7 +201,7 @@ output line 2
 | jenkinsClassnamePrefix         | `undefined`            | adds a prefix to a classname when running  in `jenkinsMode`                                                             |
 
 
-link to [npm package][npm-listing]
+Link to [npm package][npm-listing]
 
 [npm-listing]:https://www.npmjs.com/package/mocha-junit-reporter](https://www.npmjs.com/package/mocha-junit-reporter-gitlab)
 
