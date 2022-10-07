@@ -8,6 +8,7 @@ var debug = require('debug')('mocha-junit-reporter');
 var mkdirp = require('mkdirp');
 var md5 = require('md5');
 var stripAnsi = require('strip-ansi');
+var testFilePath;
 
 // Save timer references so that times are correct even if Date is stubbed.
 // See https://github.com/mochajs/mocha/issues/237
@@ -293,7 +294,8 @@ MochaJUnitReporter.prototype.getTestsuiteData = function(suite) {
 
 
   if(suite.file) {
-    testSuite.testsuite[0]._attr.file =  suite.file;
+    testFilePath = suite.file;
+    testSuite.testsuite[0]._attr.file =  testFilePath;
   }
 
   var properties = generateProperties(this._options);
@@ -330,7 +332,8 @@ MochaJUnitReporter.prototype.getTestcaseData = function(test, err) {
       _attr: {
         name: flipClassAndName ? classname : name,
         time: (typeof test.duration === 'undefined') ? 0 : test.duration / 1000,
-        classname: flipClassAndName ? name : classname
+        classname: flipClassAndName ? name : classname,
+        file: testFilePath
       }
     }]
   };
