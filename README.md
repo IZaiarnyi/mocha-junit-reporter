@@ -1,9 +1,12 @@
 # JUnit Reporter for Mocha
 
-[![Build Status][travis-badge]][travis-build]
-[![npm][npm-badge]][npm-listing]
 
 Produces JUnit-style XML test results.
+
+Added "file" attribute on a testcase level in XML report
+
+<img width="695" alt="image" src="https://user-images.githubusercontent.com/112432131/194625760-85882285-e351-480b-aeca-8ac71507bee9.png">
+
 
 ## Installation
 
@@ -197,3 +200,4 @@ output line 2
 | jenkinsMode                    | `false`                | if set to truthy value will return xml that will display nice results in Jenkins                                        |
 | jenkinsClassnamePrefix         | `undefined`            | adds a prefix to a classname when running  in `jenkinsMode`                                                             |
 
+Link to npm pakage[https://www.npmjs.com/package/mocha-junit-reporter-gitlab]
