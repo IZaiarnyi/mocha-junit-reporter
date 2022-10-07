@@ -199,5 +199,7 @@ output line 2
 | antHostname                    | `process.env.HOSTNAME` | hostname to use when running in `antMode`  will default to environment `HOSTNAME`                                       |
 | jenkinsMode                    | `false`                | if set to truthy value will return xml that will display nice results in Jenkins                                        |
 | jenkinsClassnamePrefix         | `undefined`            | adds a prefix to a classname when running  in `jenkinsMode`                                                             |
-[npm-listing]: https://www.npmjs.com/package/mocha-junit-reporter](https://www.npmjs.com/package/mocha-junit-reporter-gitlab)
+link to [npm package][npm-listing]
+
+[npm-listing]:https://www.npmjs.com/package/mocha-junit-reporter](https://www.npmjs.com/package/mocha-junit-reporter-gitlab)
 
